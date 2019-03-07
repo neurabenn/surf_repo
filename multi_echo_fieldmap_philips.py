@@ -234,8 +234,8 @@ out=final_mag.split('.nii.gz')[0]
 # betcmd="{fsldir}/bin/bet {final_mag} mag_brain -m ".format(fsldir=fsldir,final_mag=final_mag,out=out)
 # sp.run(betcmd.split())
 
-erocmd="{fsldir}/bin/fslmaths mag_brain_mask -ero mag_brain_mask".format(fsldir=fsldir)
-sp.run(erocmd.split())
+# erocmd="{fsldir}/bin/fslmaths mag_brain_mask -ero mag_brain_mask".format(fsldir=fsldir)
+# sp.run(erocmd.split())
 print("##### unwrapping phase images########")
 phase_rads=gl.glob('*rad*gz')
 
